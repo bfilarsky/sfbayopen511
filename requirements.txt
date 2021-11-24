@@ -1,4 +1,4 @@
 flake8==4.0.1
 requests==2.26.0
-requests_mock=1.93.0
+requests_mock==1.93.0
 python-dotenv==0.19.2
