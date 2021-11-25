@@ -1,0 +1,10 @@
+{
+    "type": "array",
+    "items": {
+        "Id": "string",
+        "Name": "string",
+        "Monitored": "boolean",
+        "TransportMode": "string",
+        "required": ["Id", "Name", "Monitored", "TransportMode"]
+    }
+}
