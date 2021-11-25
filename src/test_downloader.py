@@ -4,24 +4,24 @@ import downloader
 
 def testCreateEndpointNoArgs():
     test_api = 'test_api'
-    test_api_key = '123456789'
+    test_api_key = '123'
     endpoint = downloader.createEndpoint(test_api, test_api_key)
-    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123456789'
+    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123'
 
 
 def testCreateEndpointSingleArg():
     test_api = 'test_api'
-    test_api_key = '123456789'
+    test_api_key = '123'
     endpoint = downloader.createEndpoint(test_api, test_api_key, test_key='arg')
-    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123456789&test_key=arg'
+    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123&test_key=arg'
 
 
 def testCreateEndpointTwoArgs():
     test_api = 'test_api'
-    test_api_key = '123456789'
+    test_api_key = '123'
     endpoint = downloader.createEndpoint(test_api, test_api_key, test_key='arg', test_key2='arg2')
-    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123456789&test_key=arg&test_key2=arg2' \
-        or endpoint == 'http://api.511.org/transit/test_api?api_key=123456789&test_key2=arg2&test_key=arg'
+    assert endpoint == 'http://api.511.org/transit/test_api?api_key=123&test_key=arg&test_key2=arg2' \
+        or endpoint == 'http://api.511.org/transit/test_api?api_key=123&test_key2=arg2&test_key=arg'
 
 
 def testdownloadDataNominal(requests_mock):
@@ -38,12 +38,9 @@ def testdownloadDataError(requests_mock):
     assert data is None
 
 
-def testDownloader(requests_mock):
-    endpoint = downloader.createEndpoint('test_api', api_key=downloader.getApiKey())
+def testDownJSON(requests_mock):
+    api_key = '123'
+    endpoint = downloader.createEndpoint('test_api', api_key)
     requests_mock.get(endpoint, json={'test_key': 'test_value'})
-    data = downloader.downloadJSON('test_api')
-    assert data == '{"test_key": "test_value"}'
-
-
-if __name__ == "__main__":
-    print(downloader.downloadJSON("tripupdates", agency='SF').text)
+    data = downloader.download('test_api', api_key)
+    assert data == {"test_key": "test_value"}

@@ -1,0 +1,72 @@
+[
+    {
+        "Id": "T0",
+        "Name": "Test Transit Operator 0",
+        "ShortName": "Test 0",
+        "SiriOperatorRef": "test0",
+        "TimeZone": "America/Vancouver",
+        "DefaultLanguage": "en",
+        "ContactTelephoneNumber": "800 123-4567 ",
+        "WebSite": "http://www.test0.com",
+        "PrimaryMode": "bus",
+        "PrivateCode": "T0",
+        "Monitored": false,
+        "OtherModes": ""
+    },
+    {
+        "Id": "T1",
+        "Name": "Test Transit Operator 1",
+        "ShortName": "Test 1",
+        "SiriOperatorRef": "test1",
+        "TimeZone": "America/Vancouver",
+        "DefaultLanguage": "en",
+        "ContactTelephoneNumber": "800 123-4567 ",
+        "WebSite": "http://www.test1.com",
+        "PrimaryMode": "bus",
+        "PrivateCode": "T1",
+        "Monitored": true,
+        "OtherModes": ""
+    },
+    {
+        "Id": "T2",
+        "Name": "Test Transit Operator 2",
+        "ShortName": "Test 2",
+        "SiriOperatorRef": "test2",
+        "TimeZone": "America/Vancouver",
+        "DefaultLanguage": "en",
+        "ContactTelephoneNumber": "800 123-4567 ",
+        "WebSite": "http://www.test2.com",
+        "PrimaryMode": "bus",
+        "PrivateCode": "T2",
+        "Monitored": false,
+        "OtherModes": ""
+    },
+    {
+        "Id": "T3",
+        "Name": "Test Transit Operator 3",
+        "ShortName": "Test 3",
+        "SiriOperatorRef": "test3",
+        "TimeZone": "America/Vancouver",
+        "DefaultLanguage": "en",
+        "ContactTelephoneNumber": "800 123-4567 ",
+        "WebSite": "http://www.test3.com",
+        "PrimaryMode": "bus",
+        "PrivateCode": "T3",
+        "Monitored": true,
+        "OtherModes": ""
+    },
+    {
+        "Id": "T4",
+        "Name": "Test Transit Operator 4",
+        "ShortName": "Test 4",
+        "SiriOperatorRef": "test4",
+        "TimeZone": "America/Vancouver",
+        "DefaultLanguage": "en",
+        "ContactTelephoneNumber": "800 123-4567 ",
+        "WebSite": "http://www.test4.com",
+        "PrimaryMode": "bus",
+        "PrivateCode": "T4",
+        "Monitored": false,
+        "OtherModes": ""
+    }
+]
