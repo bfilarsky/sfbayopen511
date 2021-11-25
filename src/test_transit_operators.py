@@ -2,6 +2,14 @@ from transit_operators import TransitOperators
 
 import json
 from unittest.mock import patch
+import pytest
+
+
+@patch('transit_operators.download')
+def test_parse_server_error(mock_download):
+    mock_download.return_value = None
+    with pytest.raises(ConnectionError):
+        TransitOperators('123')
 
 
 @patch('transit_operators.download')
