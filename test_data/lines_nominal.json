@@ -1,0 +1,47 @@
+[
+    {
+        "Id": "0",
+        "Name": "Line 0",
+        "TransportMode": "bus",
+        "PublicCode": "0",
+        "SiriLineRef": "0",
+        "Monitored": false,
+        "OperatorRef": "SF"
+    },
+    {
+        "Id": "1",
+        "Name": "Line 1",
+        "TransportMode": "metro",
+        "PublicCode": "1",
+        "SiriLineRef": "1",
+        "Monitored": true,
+        "OperatorRef": "SF"
+    },
+    {
+        "Id": "2",
+        "Name": "Line 2",
+        "TransportMode": "bus",
+        "PublicCode": "2",
+        "SiriLineRef": "2",
+        "Monitored": false,
+        "OperatorRef": "SF"
+    },
+    {
+        "Id": "3",
+        "Name": "Line 3",
+        "TransportMode": "metro",
+        "PublicCode": "3",
+        "SiriLineRef": "3",
+        "Monitored": true,
+        "OperatorRef": "SF"
+    },
+    {
+        "Id": "4",
+        "Name": "Line 4",
+        "TransportMode": "bus",
+        "PublicCode": "4",
+        "SiriLineRef": "4",
+        "Monitored": false,
+        "OperatorRef": "SF"
+    }
+]
