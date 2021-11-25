@@ -1,0 +1,22 @@
+{
+    "type": "array",
+    "items": {
+        "Id": "string",
+        "Name": "string",
+        "Monitored": "boolean",
+        "Montiored": "boolean",
+        "required": ["Id", "Name"],
+        "oneOf": [
+            {
+                "required": [
+                    "Monitored"
+                ]
+            },
+            {
+                "required": [
+                    "Montiored"
+                ]
+            }
+        ]
+    }
+}
