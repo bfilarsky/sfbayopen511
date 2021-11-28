@@ -1,0 +1,71 @@
+{
+    "Siri": {
+        "type": "object",
+        "properties": {
+            "ServiceDelivery": {
+                "type": "object",
+                "properties": {
+                    "VehicleMonitoringDelivery": {
+                        "type": "object",
+                        "properties": {
+                            "VehicleActivity": {
+                                "type": "array",
+                                "items": {
+                                    "RecordedAtTime": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "MonitoredVehicleJourney": {
+                                        "type": "string"
+                                    },
+                                    "LineRef": {
+                                        "type": "string"
+                                    },
+                                    "DirectionRef": {
+                                        "type": "string"
+                                    },
+                                    "PublishedLineName": {
+                                        "type": "string"
+                                    },
+                                    "OriginName": {
+                                        "type": "string"
+                                    },
+                                    "DestinationName": {
+                                        "type": "string"
+                                    },
+                                    "Monitored": "boolean",
+                                    "VehicleLocation": {
+                                        "type": "string"
+                                    },
+                                    "required": [
+                                        "RecordedAtTime",
+                                        "MonitoredVehicleJourney",
+                                        "LineRef",
+                                        "DirectionRef",
+                                        "PublishedLineName",
+                                        "OriginName",
+                                        "DestinationName",
+                                        "Monitored",
+                                        "VehicleLocation"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "VehicleActivity"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "VehicleMonitoringDelivery"
+                    ]
+                }
+            },
+            "required": [
+                "ServiceDelivery"
+            ]
+        }
+    },
+    "required": [
+        "Siri"
+    ]
+}
