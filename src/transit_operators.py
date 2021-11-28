@@ -18,8 +18,8 @@ class TransitOperators:
     def __init__(self, api_key):
         self.__api_key = api_key
         self.operators = []
-        transit_operators_text_list = download('operators', api_key)
-        if transit_operators_text_list is None:
+        response = download('operators', api_key)
+        if response is None:
             raise ConnectionError("Could not download data")
-        for transit_operator in transit_operators_text_list:
+        for transit_operator in response:
             self.operators.append(TransitOperator(transit_operator))

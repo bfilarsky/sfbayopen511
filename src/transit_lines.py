@@ -14,9 +14,8 @@ class TransitLines:
     def __init__(self, api_key, operator_id):
         self.__api_key = api_key
         self.lines = []
-        transit_lines_text_list = download('lines', api_key, operator_id=operator_id)
-        print(transit_lines_text_list)
-        if transit_lines_text_list is None:
+        response = download('lines', api_key, operator_id=operator_id)
+        if response is None:
             raise ConnectionError("Could not download data")
-        for transit_line in transit_lines_text_list:
+        for transit_line in response:
             self.lines.append(TransitLine(transit_line))

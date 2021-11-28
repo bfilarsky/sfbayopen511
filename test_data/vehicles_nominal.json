@@ -1,0 +1,210 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-11-28T21:47:21Z",
+            "ProducerRef": "SF",
+            "Status": true,
+            "VehicleMonitoringDelivery": {
+                "version": "1.4",
+                "ResponseTimestamp": "2021-11-28T21:47:21Z",
+                "VehicleActivity": [
+                    {
+                        "RecordedAtTime": "2021-11-28T20:00:00Z",
+                        "ValidUntilTime": "",
+                        "MonitoredVehicleJourney": {
+                            "LineRef": "0",
+                            "DirectionRef": "OB",
+                            "FramedVehicleJourneyRef": {
+                                "DataFrameRef": "2021-11-28",
+                                "DatedVehicleJourneyRef": "10364908"
+                            },
+                            "PublishedLineName": "Test Line 0",
+                            "OperatorRef": "SF",
+                            "OriginRef": "012345",
+                            "OriginName": "Test Origin",
+                            "DestinationRef": "6789",
+                            "DestinationName": "Test Destination",
+                            "Monitored": true,
+                            "InCongestion": null,
+                            "VehicleLocation": {
+                                "Longitude": "-122.402451",
+                                "Latitude": "37.7884674"
+                            },
+                            "Bearing": null,
+                            "Occupancy": null,
+                            "VehicleRef": "0123",
+                            "MonitoredCall": {
+                                "StopPointRef": "01",
+                                "StopPointName": "Test Stop 0",
+                                "VehicleLocationAtStop": "",
+                                "VehicleAtStop": "",
+                                "AimedArrivalTime": "2021-11-28T21:49:47Z",
+                                "ExpectedArrivalTime": "2021-11-28T21:47:01Z",
+                                "AimedDepartureTime": "2021-11-28T21:49:47Z",
+                                "ExpectedDepartureTime": null
+                            },
+                            "OnwardCalls": {
+                                "OnwardCall": [
+                                    {
+                                        "StopPointRef": "02",
+                                        "StopPointName": "Test Stop 1",
+                                        "AimedArrivalTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:48:32Z",
+                                        "AimedDepartureTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "03",
+                                        "StopPointName": "Test Stop 2",
+                                        "AimedArrivalTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:49:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "04",
+                                        "StopPointName": "Test Stop 3",
+                                        "AimedArrivalTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:51:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedDepartureTime": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2021-11-28T21:00:00Z",
+                        "ValidUntilTime": "",
+                        "MonitoredVehicleJourney": {
+                            "LineRef": "1",
+                            "DirectionRef": "OB",
+                            "FramedVehicleJourneyRef": {
+                                "DataFrameRef": "2021-11-28",
+                                "DatedVehicleJourneyRef": "10364908"
+                            },
+                            "PublishedLineName": "Test Line 1",
+                            "OperatorRef": "SF",
+                            "OriginRef": "012345",
+                            "OriginName": "Test Origin",
+                            "DestinationRef": "6789",
+                            "DestinationName": "Test Destination",
+                            "Monitored": true,
+                            "InCongestion": null,
+                            "VehicleLocation": {
+                                "Longitude": "-122.402451",
+                                "Latitude": "37.7884674"
+                            },
+                            "Bearing": null,
+                            "Occupancy": null,
+                            "VehicleRef": "0123",
+                            "MonitoredCall": {
+                                "StopPointRef": "11",
+                                "StopPointName": "Test Stop 4",
+                                "VehicleLocationAtStop": "",
+                                "VehicleAtStop": "",
+                                "AimedArrivalTime": "2021-11-28T21:49:47Z",
+                                "ExpectedArrivalTime": "2021-11-28T21:47:01Z",
+                                "AimedDepartureTime": "2021-11-28T21:49:47Z",
+                                "ExpectedDepartureTime": null
+                            },
+                            "OnwardCalls": {
+                                "OnwardCall": [
+                                    {
+                                        "StopPointRef": "12",
+                                        "StopPointName": "Test Stop 5",
+                                        "AimedArrivalTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:48:32Z",
+                                        "AimedDepartureTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "13",
+                                        "StopPointName": "Test Stop 6",
+                                        "AimedArrivalTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:49:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "14",
+                                        "StopPointName": "Test Stop 7",
+                                        "AimedArrivalTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:51:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedDepartureTime": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2021-11-28T22:00:00Z",
+                        "ValidUntilTime": "",
+                        "MonitoredVehicleJourney": {
+                            "LineRef": "2",
+                            "DirectionRef": "OB",
+                            "FramedVehicleJourneyRef": {
+                                "DataFrameRef": "2021-11-28",
+                                "DatedVehicleJourneyRef": "10364908"
+                            },
+                            "PublishedLineName": "Test Line 2",
+                            "OperatorRef": "SF",
+                            "OriginRef": "012345",
+                            "OriginName": "Test Origin",
+                            "DestinationRef": "6789",
+                            "DestinationName": "Test Destination",
+                            "Monitored": true,
+                            "InCongestion": null,
+                            "VehicleLocation": {
+                                "Longitude": "-122.402451",
+                                "Latitude": "37.7884674"
+                            },
+                            "Bearing": null,
+                            "Occupancy": null,
+                            "VehicleRef": "0123",
+                            "MonitoredCall": {
+                                "StopPointRef": "21",
+                                "StopPointName": "Test Stop 8",
+                                "VehicleLocationAtStop": "",
+                                "VehicleAtStop": "",
+                                "AimedArrivalTime": "2021-11-28T21:49:47Z",
+                                "ExpectedArrivalTime": "2021-11-28T21:47:01Z",
+                                "AimedDepartureTime": "2021-11-28T21:49:47Z",
+                                "ExpectedDepartureTime": null
+                            },
+                            "OnwardCalls": {
+                                "OnwardCall": [
+                                    {
+                                        "StopPointRef": "22",
+                                        "StopPointName": "Test Stop 9",
+                                        "AimedArrivalTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:48:32Z",
+                                        "AimedDepartureTime": "2021-11-28T21:52:00Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "23",
+                                        "StopPointName": "Test Stop 10",
+                                        "AimedArrivalTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:49:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:53:37Z",
+                                        "ExpectedDepartureTime": null
+                                    },
+                                    {
+                                        "StopPointRef": "24",
+                                        "StopPointName": "Test Stop 11",
+                                        "AimedArrivalTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedArrivalTime": "2021-11-28T21:51:42Z",
+                                        "AimedDepartureTime": "2021-11-28T21:55:18Z",
+                                        "ExpectedDepartureTime": null
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
