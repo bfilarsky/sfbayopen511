@@ -1,18 +1,18 @@
-from transit_lines import TransitLines
+from sfbayopen511.transit_lines import TransitLines
 
 import json
 from unittest.mock import patch
 import pytest
 
 
-@patch('transit_lines.download')
+@patch('sfbayopen511.transit_lines.download')
 def test_parse_server_error(mock_download):
     mock_download.return_value = None
     with pytest.raises(ConnectionError):
         TransitLines('123', 'SF')
 
 
-@patch('transit_lines.download')
+@patch('sfbayopen511.transit_lines.download')
 def test_parse_nominal(mock_download):
     with open('test_data/lines_nominal.json') as file:
         mock_download.return_value = json.load(file)

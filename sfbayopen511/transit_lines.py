@@ -1,4 +1,4 @@
-from downloader import download
+from sfbayopen511.downloader import download
 
 
 class TransitLine:

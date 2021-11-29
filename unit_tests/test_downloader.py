@@ -1,5 +1,4 @@
-#!/bin/python
-import downloader
+from source.downloader import downloader
 
 
 def testCreateEndpointNoArgs():

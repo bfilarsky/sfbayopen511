@@ -1,4 +1,4 @@
-from transit_vehicles import TransitVehicles
+from sfbayopen511.transit_vehicles import TransitVehicles
 
 import json
 from unittest.mock import patch
@@ -6,14 +6,14 @@ from datetime import datetime
 import pytest
 
 
-@patch('transit_vehicles.download')
+@patch('sfbayopen511.transit_vehicles.download')
 def test_parse_server_error(mock_download):
     mock_download.return_value = None
     with pytest.raises(ConnectionError):
         TransitVehicles('123', 'SF')
 
 
-@patch('transit_vehicles.download')
+@patch('sfbayopen511.transit_vehicles.download')
 def test_parse_nominal(mock_download):
     with open('test_data/vehicles_nominal.json') as file:
         mock_download.return_value = json.load(file)

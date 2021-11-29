@@ -3,7 +3,7 @@ import json
 from dotenv import load_dotenv
 import os
 
-from downloader import download
+from sfbayopen511.downloader import download
 
 
 def test_nominal_schema():
